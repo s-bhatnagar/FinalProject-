@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ProjectTeam26" Class="ExcelImportDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tcp:m6n2m1beq8.database.windows.net,1433;Initial Catalog=ProjectTeam26;User ID=kaycalk@m6n2m1beq8;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ProjectTeam26ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[__MigrationHistory]" Member="__MigrationHistories">
+    <Type Name="__MigrationHistory">
+      <Column Name="MigrationId" Type="System.String" DbType="NVarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ContextKey" Type="System.String" DbType="NVarChar(300) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Model" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="ProductVersion" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Suppliers" Member="Suppliers">
+    <Type Name="Supplier">
+      <Column Name="SuppliersID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SupplierName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderAmount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.['Additional Requirements$']" Member="_Additional_Requirements__s">
+    <Type Name="_Additional_Requirements__">
+      <Column Name="Validations" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="F2" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="F3" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="F4" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="F5" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="F6" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetRoles" Member="AspNetRoles">
+    <Type Name="AspNetRole">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="Discriminator" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Association Name="AspNetRole_AspNetUserRole" Member="AspNetUserRoles" ThisKey="Id" OtherKey="RoleId" Type="AspNetUserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserClaims" Member="AspNetUserClaims">
+    <Type Name="AspNetUserClaim">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="ClaimType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ClaimValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="AspNetUser_AspNetUserClaim" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserLogins" Member="AspNetUserLogins">
+    <Type Name="AspNetUserLogin">
+      <Column Name="LoginProvider" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProviderKey" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="AspNetUser_AspNetUserLogin" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserRoles" Member="AspNetUserRoles">
+    <Type Name="AspNetUserRole">
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="AspNetRole_AspNetUserRole" Member="AspNetRole" ThisKey="RoleId" OtherKey="Id" Type="AspNetRole" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="AspNetUser_AspNetUserRole" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUsers" Member="AspNetUsers">
+    <Type Name="AspNetUser">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="States" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Zipcode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard1Type" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard2Type" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard3Type" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="EmailConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordHash" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SecurityStamp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumberConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TwoFactorEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LockoutEndDateUtc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LockoutEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AccessFailedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="AspNetUser_AspNetUserClaim" Member="AspNetUserClaims" ThisKey="Id" OtherKey="UserId" Type="AspNetUserClaim" />
+      <Association Name="AspNetUser_AspNetUserLogin" Member="AspNetUserLogins" ThisKey="Id" OtherKey="UserId" Type="AspNetUserLogin" />
+      <Association Name="AspNetUser_AspNetUserRole" Member="AspNetUserRoles" ThisKey="Id" OtherKey="UserId" Type="AspNetUserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Books" Member="Books">
+    <Type Name="Books">
+      <Column Name="AuthorFirst" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="AuthorLast" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PublicationDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PriceLastPaid" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Inventory" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReorderPoint" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Reviews" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Ratings" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Genre" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="BooksID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Promotions_PromotionsID" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="UniqueNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Book_Cart" Member="Carts" ThisKey="BooksID" OtherKey="BooksID" Type="Cart" />
+      <Association Name="Book_Employee" Member="Employees" ThisKey="BooksID" OtherKey="Books_BooksID" Type="Employees" />
+      <Association Name="Book_OrderDetail" Member="OrderDetails" ThisKey="BooksID" OtherKey="BooksID" Type="OrderDetail" />
+      <Association Name="Promotion_Book" Member="Promotion" ThisKey="Promotions_PromotionsID" OtherKey="PromotionsID" Type="Promotion" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Books$" Member="Books_s">
+    <Type Name="Books_">
+      <Column Name="UniqueNumber" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AuthorFirst" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AuthorLast" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PublicationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PriceLastPaid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Inventory" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[Reorder Point]" Member="Reorder_Point" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Carts" Member="Carts">
+    <Type Name="Cart">
+      <Column Name="RecordID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CartID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BooksID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Book_Cart" Member="Books" ThisKey="BooksID" OtherKey="BooksID" Type="Books" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customers" Member="Customers">
+    <Type Name="Customers">
+      <Column Name="CustomersID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="MI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Zipcode" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CreditCard1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard1Type" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CreditCard2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard2Type" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard3" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreditCard3Type" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Orders_OrdersID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Order_Customer" Member="Order" ThisKey="Orders_OrdersID" OtherKey="OrdersID" Type="Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customers$" Member="Customers_s">
+    <Type Name="Customers_">
+      <Column Name="EmailAddr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MI" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Phone" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[Credit Card #1 Number]" Member="Credit_Card__1_Number" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Credit Card #1 Number1]" Member="Credit_Card__1_Number1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Credit Card #2 Number]" Member="Credit_Card__2_Number" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="[Credit Card #2 Number1]" Member="Credit_Card__2_Number1" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employees" Member="Employees">
+    <Type Name="Employees">
+      <Column Name="FName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="MI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Zipcode" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeesID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmpNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeTypes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Books_BooksID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Book_Employee" Member="Books" ThisKey="Books_BooksID" OtherKey="BooksID" Type="Books" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employees$" Member="Employees_s">
+    <Type Name="Employees_">
+      <Column Name="EmpID" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="MI" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="[Employee Type]" Member="Employee_Type" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrderDetails" Member="OrderDetails">
+    <Type Name="OrderDetail">
+      <Column Name="OrderDetailId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BooksID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UnitPrice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Order_OrdersID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Book_OrderDetail" Member="Books" ThisKey="BooksID" OtherKey="BooksID" Type="Books" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Order_OrderDetail" Member="Order" ThisKey="Order_OrdersID" OtherKey="OrdersID" Type="Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Orders" Member="Orders">
+    <Type Name="Order">
+      <Column Name="OrdersID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UniqueNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Order_Customer" Member="Customers" ThisKey="OrdersID" OtherKey="Orders_OrdersID" Type="Customers" />
+      <Association Name="Order_OrderDetail" Member="OrderDetails" ThisKey="OrdersID" OtherKey="Order_OrdersID" Type="OrderDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Promotions" Member="Promotions">
+    <Type Name="Promotion">
+      <Column Name="PromotionsID" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="OrderID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CouponTypes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Promotion_Book" Member="Books" ThisKey="PromotionsID" OtherKey="Promotions_PromotionsID" Type="Books" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ShoppingCarts" Member="ShoppingCarts">
+    <Type Name="ShoppingCart">
+      <Column Name="ShoppingCartID" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

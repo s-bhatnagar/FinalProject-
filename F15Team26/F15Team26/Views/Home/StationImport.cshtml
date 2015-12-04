@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "StationImport";
+    //Layout = "~/Areas/Admin/Views/Shared/_index.cshtml";
+}
+@using (Html.BeginForm("StationImport", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <h2>
+        SafariBooksData.xlsx import data from EXCEL
+    </h2>
+    <div style="margin-top: 20px;">
+        <fieldset id="myfieldset1">
+            <legend>SafariBooksData.xlsx import info</legend>
+            <p>
+                SELCET document：<input id="FileUpload" type="file" name="files" style="width: 250px; height: 24px;
+                    background: White" class="easyui-validatebox" />
+            </p>
+            <p>
+                <input id="btnImport" type="submit" value="import" style="width: 60px; height: 28px;" />
+            </p>
+            <p style="color: Red; text-align: center;">@ViewBag.error</p>
+        </fieldset>
+    </div>
+}
+
+

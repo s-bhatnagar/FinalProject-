@@ -1,0 +1,42 @@
+﻿@model F15Team26.Models.ShoppingCart
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ShoppingCart</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstBookShipping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstBookShipping)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdditionalBookShipping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdditionalBookShipping)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoppingCartID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,111 @@
+﻿@model F15Team26.Models.Books
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Books</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorFirst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorFirst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorLast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorLast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublicationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PriceLastPaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceLastPaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Inventory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inventory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReorderPoint)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReorderPoint)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reviews)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reviews)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ratings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ratings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Add to Shopping Cart", "Add to Cart", "ShoppingCart", new { id = Model.BooksID }, ""))
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UniqueNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<p class="button">
+    @Html.ActionLink("Add to cart", "AddToCart",
+ "ShoppingCart", new { id = Model.BooksID }, "")
+</p>

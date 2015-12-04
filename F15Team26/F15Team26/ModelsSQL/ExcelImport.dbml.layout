@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17, 18.125" name="ExcelImport">
+  <DataContextMoniker Name="/ExcelImportDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f36a4b2f-7b50-4b4e-8123-997e02cf0b00" absoluteBounds="0.75, 2.125, 2, 1.5373050944010416">
+      <DataClassMoniker Name="/ExcelImportDataContext/__MigrationHistory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d07f48e7-2806-4f81-ab4f-b0a87badb579" absoluteBounds="0.765, 2.585, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b98c053c-d980-4de9-8bc8-503c904a5c7b" absoluteBounds="0.75, 9.125, 2, 1.3525109863281237">
+      <DataClassMoniker Name="/ExcelImportDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d875fa54-f443-44e9-83a4-b6a0ea0a73f3" absoluteBounds="0.765, 9.585, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26be7fe6-5063-4b0f-bd1b-ca3357ce09a3" absoluteBounds="0.75, 12.125, 2, 1.9068933105468737">
+      <DataClassMoniker Name="/ExcelImportDataContext/_Additional_Requirements__" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3c50132-f1e1-4d98-8f66-6f61f5780430" absoluteBounds="0.765, 12.585, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed7126b9-4d46-4db7-9634-12c385c0d115" absoluteBounds="8.75, 16.5, 2, 1.3525109863281237">
+      <DataClassMoniker Name="/ExcelImportDataContext/AspNetRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e962a3bb-dec1-49db-9e23-897a624fd8e2" absoluteBounds="8.765, 16.96, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78d92f28-6de9-4522-86d4-f5e033e5ce48" absoluteBounds="11.5, 14.375, 2, 1.5373050944010416">
+      <DataClassMoniker Name="/ExcelImportDataContext/AspNetUserClaim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9c5f359-0701-4b0b-bb44-e9f217857ce4" absoluteBounds="11.515, 14.835, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b426de8-a073-48db-ad1a-4e54a59d6847" absoluteBounds="11.5, 12.375, 2, 1.3525109863281237">
+      <DataClassMoniker Name="/ExcelImportDataContext/AspNetUserLogin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="979f0832-d4d5-43f3-ae23-5d74569fc426" absoluteBounds="11.515, 12.835, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8c22f8e-d915-4c84-a921-7ae19ba3ce99" absoluteBounds="11.5, 9.625, 2, 1.1677168782552094">
+      <DataClassMoniker Name="/ExcelImportDataContext/AspNetUserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c76daea9-a5c1-4234-a34c-bca2bc0e7490" absoluteBounds="11.515, 10.085, 1.9700000000000002, 0.60771687825520826" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af96687c-ad32-44aa-a25e-176315a5bfb0" absoluteBounds="8.75, 9.375, 2, 5.6027754720052094">
+      <DataClassMoniker Name="/ExcelImportDataContext/AspNetUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aff0b594-966c-4cae-a4df-90266bfb9cd0" absoluteBounds="8.765, 9.835, 1.9700000000000002, 5.042775472005208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dcac59d3-7016-42ba-ba9a-ff701a30f300" absoluteBounds="3.5, 4.875, 2, 3.3852461751302068">
+      <DataClassMoniker Name="/ExcelImportDataContext/Books" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11da9451-00d9-4663-9915-f5b65bb5cc4d" absoluteBounds="3.515, 5.335, 1.9700000000000002, 2.825246175130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8af050e-fb70-4eb9-bc14-81397dc75261" absoluteBounds="11.75, 2.125, 2, 2.6460697428385416">
+      <DataClassMoniker Name="/ExcelImportDataContext/Books_" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d3b6fa9-24c9-4282-9b64-a763a050af42" absoluteBounds="11.765, 2.585, 1.9700000000000002, 2.0860697428385415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1f4ec8b-98c9-41ba-8a7b-adf425b0b53a" absoluteBounds="6.25, 3.875, 2, 1.5373050944010416">
+      <DataClassMoniker Name="/ExcelImportDataContext/Cart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d102fb6e-8a24-491f-b689-71cc360dfdef" absoluteBounds="6.265, 4.335, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5eba9d65-713f-48f4-87bd-d8a6475979ac" absoluteBounds="9.25, 1, 2, 3.7548343912760416">
+      <DataClassMoniker Name="/ExcelImportDataContext/Customers" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd408d1e-77cc-4e44-8e1d-afe4f3598853" absoluteBounds="9.265, 1.46, 1.9700000000000002, 3.1948343912760415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96641ff9-c80b-4c45-a646-ec58fd64f451" absoluteBounds="3.75, 13.125, 2, 3.0156579589843773">
+      <DataClassMoniker Name="/ExcelImportDataContext/Customers_" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a27d2e3-89d9-449c-a42d-d4f1cd87201a" absoluteBounds="3.765, 13.585, 1.9700000000000002, 2.455657958984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b9a254b-e3d0-4c58-9932-fa6d74370b25" absoluteBounds="6.25, 8.75, 2, 3.0156579589843773">
+      <DataClassMoniker Name="/ExcelImportDataContext/Employees" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f20dfe0-ef32-42c6-b21d-50a8277959f4" absoluteBounds="6.265, 9.21, 1.9700000000000002, 2.455657958984375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd1aa8da-f6b7-4959-ba52-3a97675b8d24" absoluteBounds="11.75, 6.125, 2, 2.6460697428385425">
+      <DataClassMoniker Name="/ExcelImportDataContext/Employees_" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed74cf8d-b31d-49bd-8f7c-47ff501db66b" absoluteBounds="11.765, 6.585, 1.9700000000000002, 2.0860697428385415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ecd50586-c485-4d01-9acc-f5dcb18a3d9a" absoluteBounds="9.25, 5.625, 2, 1.9068933105468755">
+      <DataClassMoniker Name="/ExcelImportDataContext/OrderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1d2a0211-eb25-45c7-8181-63907a62c466" absoluteBounds="9.265, 6.085, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1bf71bb-ca9d-44e1-9b74-c6db59a0d6d3" absoluteBounds="6.5, 0.75, 2, 1.5373050944010416">
+      <DataClassMoniker Name="/ExcelImportDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8b35b85-db1d-4443-b305-dc4236f7cc8b" absoluteBounds="6.515, 1.21, 1.9700000000000002, 0.97730509440104174" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4543742b-e880-42f1-bc56-612c0eeabf6e" absoluteBounds="0.75, 5.875, 2, 1.3525109863281255">
+      <DataClassMoniker Name="/ExcelImportDataContext/Promotion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81a2a672-5a5c-4148-8320-5bd732fe11ab" absoluteBounds="0.765, 6.335, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc6aa5f6-5f63-4037-ab6d-28d8dd460f8b" absoluteBounds="14.75, 2.125, 2, 0.98292277018229157">
+      <DataClassMoniker Name="/ExcelImportDataContext/ShoppingCart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14fb30ee-b8c5-4911-a9b6-5b032c770b48" absoluteBounds="14.765, 2.585, 1.9700000000000002, 0.42292277018229169" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 16.5); (11.125 : 16.125); (11.125 : 10.2088584391276); (11.5 : 10.2088584391276)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/AspNetRole/AspNetRole_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="ed7126b9-4d46-4db7-9634-12c385c0d115" />
+        <classShapeMoniker Id="a8c22f8e-d915-4c84-a921-7ae19ba3ce99" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 14.6763877360026); (11.0416666666667 : 14.6763877360026 : JumpStart); (11.2083333333333 : 14.6763877360026 : JumpEnd); (11.5 : 14.6763877360026)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/AspNetUser/AspNetUser_AspNetUserClaim" />
+      <nodes>
+        <classShapeMoniker Id="af96687c-ad32-44aa-a25e-176315a5bfb0" />
+        <classShapeMoniker Id="78d92f28-6de9-4522-86d4-f5e033e5ce48" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 13.0512554931641); (11.0416666666667 : 13.0512554931641 : JumpStart); (11.2083333333333 : 13.0512554931641 : JumpEnd); (11.5 : 13.0512554931641)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/AspNetUser/AspNetUser_AspNetUserLogin" />
+      <nodes>
+        <classShapeMoniker Id="af96687c-ad32-44aa-a25e-176315a5bfb0" />
+        <classShapeMoniker Id="6b426de8-a073-48db-ad1a-4e54a59d6847" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 9.8544292195638); (11.5 : 9.8544292195638)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/AspNetUser/AspNetUser_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="af96687c-ad32-44aa-a25e-176315a5bfb0" />
+        <classShapeMoniker Id="a8c22f8e-d915-4c84-a921-7ae19ba3ce99" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.14365254720052); (6.25 : 5.14365254720052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/Books/Book_Cart" />
+      <nodes>
+        <classShapeMoniker Id="dcac59d3-7016-42ba-ba9a-ff701a30f300" />
+        <classShapeMoniker Id="a1f4ec8b-98c9-41ba-8a7b-adf425b0b53a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 8.26024617513021); (4.5 : 10.2578289794922); (6.25 : 10.2578289794922)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/Books/Book_Employee" />
+      <nodes>
+        <classShapeMoniker Id="dcac59d3-7016-42ba-ba9a-ff701a30f300" />
+        <classShapeMoniker Id="0b9a254b-e3d0-4c58-9932-fa6d74370b25" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.57844665527344); (9.25 : 6.57844665527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/Books/Book_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="dcac59d3-7016-42ba-ba9a-ff701a30f300" />
+        <classShapeMoniker Id="ecd50586-c485-4d01-9acc-f5dcb18a3d9a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 1.64365254720052); (9.25 : 1.64365254720052)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/Order/Order_Customer" />
+      <nodes>
+        <classShapeMoniker Id="c1bf71bb-ca9d-44e1-9b74-c6db59a0d6d3" />
+        <classShapeMoniker Id="5eba9d65-713f-48f4-87bd-d8a6475979ac" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.40625 : 2.28730509440104); (8.40625 : 6.07047082763672); (9.25 : 6.07047082763672)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/Order/Order_OrderDetail" />
+      <nodes>
+        <classShapeMoniker Id="c1bf71bb-ca9d-44e1-9b74-c6db59a0d6d3" />
+        <classShapeMoniker Id="ecd50586-c485-4d01-9acc-f5dcb18a3d9a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.55125549316406); (3.5 : 6.55125549316406)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ExcelImportDataContext/Promotion/Promotion_Book" />
+      <nodes>
+        <classShapeMoniker Id="4543742b-e880-42f1-bc56-612c0eeabf6e" />
+        <classShapeMoniker Id="dcac59d3-7016-42ba-ba9a-ff701a30f300" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
